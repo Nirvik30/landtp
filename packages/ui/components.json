@@ -17,6 +17,9 @@
     "lib": "@workspace/ui/lib",
     "ui": "@workspace/ui/components"
   },
+  "registries": {
+    "@componentry": "https://componentry.fun/r/{name}.json"
+  },
   "rtl": false,
   "menuColor": "default",
   "menuAccent": "subtle"
