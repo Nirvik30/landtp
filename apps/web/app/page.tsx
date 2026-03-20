@@ -1,5 +1,6 @@
 import { Button } from "@workspace/ui/components/button"
 import { Input } from "@workspace/ui/components/input"
+import { CursorDrivenParticleTypography } from "@workspace/ui/components/ui/cursor-driven-particle-typography"
 import { WeeklySalesChart } from "@/components/weekly-sales-chart"
 
 export default function Page() {
@@ -15,6 +16,9 @@ export default function Page() {
         </div>
         <div className="text-muted-foreground font-mono text-xs">
           (Press <kbd>d</kbd> to toggle dark mode)
+        </div>
+        <div className="h-[320px] w-full rounded-md border">
+          <CursorDrivenParticleTypography text="DESIGN" fontSize={96} />
         </div>
         <WeeklySalesChart />
       </div>
