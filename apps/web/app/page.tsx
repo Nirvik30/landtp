@@ -1,5 +1,6 @@
 import { Button } from "@workspace/ui/components/button"
 import { Input } from "@workspace/ui/components/input"
+import { WeeklySalesChart } from "@/components/weekly-sales-chart"
 
 export default function Page() {
   return (
@@ -15,6 +16,7 @@ export default function Page() {
         <div className="text-muted-foreground font-mono text-xs">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
+        <WeeklySalesChart />
       </div>
     </div>
   )
