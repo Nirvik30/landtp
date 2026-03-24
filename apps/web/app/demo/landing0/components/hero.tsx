@@ -12,6 +12,29 @@ export function Hero() {
         <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-blue-600 rounded-full mix-blend-screen filter blur-[150px] animate-pulse delay-700"></div>
       </div>
 
+      {/* 3D Tilted Block Grid Background */}
+      <div 
+        className="absolute inset-0 z-0 pointer-events-none overflow-hidden" 
+        style={{ 
+          perspective: '1000px',
+          maskImage: 'radial-gradient(circle at center, black, transparent 80%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, black, transparent 80%)'
+        }}
+      >
+        <div 
+          className="absolute w-[200vw] h-[200vh] left-1/2 top-1/2 opacity-[0.3]"
+          style={{ 
+            transform: 'translate(-50%, -50%) rotateX(60deg) rotateZ(-20deg) translateY(-20%)',
+            transformOrigin: '50% 50%',
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)
+            `,
+            backgroundSize: '60px 60px'
+          }}
+        ></div>
+      </div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         <AnimatedContent
           distance={100}
