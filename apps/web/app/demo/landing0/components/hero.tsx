@@ -8,8 +8,8 @@ export function Hero() {
     <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-black text-white">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 opacity-40">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-600 rounded-full mix-blend-screen filter blur-[150px] animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-blue-600 rounded-full mix-blend-screen filter blur-[150px] animate-pulse delay-700"></div>
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600 rounded-full mix-blend-screen filter blur-[150px]"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-cyan-600 rounded-full mix-blend-screen filter blur-[150px]"></div>
       </div>
 
       {/* 3D Tilted Block Grid Background */}
@@ -45,16 +45,16 @@ export function Hero() {
           scale={0.8}
           threshold={0.1}
         >
-          <Badge variant="secondary" className="mb-6 py-2 px-4 shadow-xl shadow-purple-500/20 bg-white/5 backdrop-blur-md border border-white/10 text-purple-200">
+          <Badge variant="secondary" className="mb-6 py-2 px-4 shadow-xl shadow-blue-500/20 bg-white/5 backdrop-blur-md border border-white/10 text-blue-200">
             <Sparkles className="w-4 h-4 mr-2 inline" />
             Introducing the Next Generation
           </Badge>
 
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[1.1] transition-transform duration-500 hover:scale-105 cursor-default">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 pb-2 hover:from-red-400 hover:via-purple-500 hover:to-pink-500 transition-all duration-700">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 pb-2 hover:from-blue-400 hover:via-indigo-500 hover:to-cyan-400 transition-all duration-700">
               Transform your
             </span>
-            <span className="block text-white hover:text-purple-200 transition-colors duration-300">
+            <span className="block text-white hover:text-cyan-200 transition-colors duration-300">
               digital experience
             </span>
           </h1>
